@@ -1,115 +1,239 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Private Access</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>المكتب | للاستشارات القانونية في تركيا</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-:root{
-  --bg:#0b0710;
-  --card:#12080d;
-  --telegram:#1f8fbf;
-}
-
-*{box-sizing:border-box}
-
 body{
   margin:0;
-  font-family:'Cairo',sans-serif;
-  background:var(--bg);
-  color:#f7e9f2;
-  padding:6px;
+  font-family: "Cairo", Tahoma, Arial, sans-serif;
+  background:#ffffff;
+  color:#333;
 }
+a{text-decoration:none}
 
-.container{
-  max-width:400px;
+/* HEADER */
+header{
+  background:#0f1e2d;
+  padding:18px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  color:#fff;
+  font-size:26px;
+  font-weight:700;
+}
+nav a{
+  color:#fff;
+  margin-right:25px;
+  font-size:16px;
+}
+nav a:hover{color:#c9a24d}
+
+/* HERO */
+.hero{
+  background:
+  linear-gradient(rgba(15,30,45,.75),rgba(15,30,45,.75)),
+  url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  padding:140px 40px;
+  text-align:center;
+}
+.hero h1{
+  font-size:44px;
+  margin-bottom:20px;
+}
+.hero p{
+  font-size:20px;
+  max-width:800px;
   margin:auto;
 }
-
-.hero{
-  text-align:center;
-  padding:14px;
-  margin:8px 0;
-  border-radius:10px;
-  background:linear-gradient(135deg,rgba(255,154,158,.18),rgba(246,211,101,.18));
-}
-
-.hero h2{
-  font-size:14px;
-  margin:0 0 6px;
-}
-
-.invite{
-  font-size:11.5px;
-  line-height:1.7;
-  opacity:.9;
-  margin:6px 0 12px;
-}
-
-.card{
-  background:var(--card);
-  padding:12px;
-  margin-top:6px;
-  border-radius:10px;
-  border:1px solid rgba(255,255,255,.06);
-  font-size:11.3px;
-  line-height:1.75;
-  opacity:.95;
-}
-
-.telegram-btn{
-  display:block;
-  background:var(--telegram);
-  color:#fff;
-  font-size:13px;
-  padding:10px;
-  border-radius:10px;
-  text-align:center;
-  text-decoration:none;
+.hero .btn{
+  display:inline-block;
+  margin-top:30px;
+  background:#c9a24d;
+  color:#0f1e2d;
+  padding:14px 40px;
   font-weight:700;
-  margin-top:12px;
+  border-radius:4px;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 50px;
+  text-align:center;
+}
+.section h2{
+  font-size:34px;
+  color:#0f1e2d;
+  margin-bottom:20px;
+}
+.section p{
+  max-width:900px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.9;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+.service-box{
+  background:#f6f6f6;
+  padding:35px 25px;
+  border-radius:6px;
+  border-top:4px solid #c9a24d;
+}
+.service-box h3{
+  color:#0f1e2d;
+  margin-bottom:15px;
+}
+
+/* WHY US */
+.why{
+  background:#f2f4f7;
+}
+.why ul{
+  list-style:none;
+  padding:0;
+  max-width:800px;
+  margin:40px auto 0;
+}
+.why li{
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+/* CONTACT */
+.contact{
+  background:#0f1e2d;
+  color:#fff;
+}
+.contact h2{color:#fff}
+.contact p{color:#ddd}
+
+/* FOOTER */
+footer{
+  background:#0b1621;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:#25D366;
+  color:#fff;
+  padding:16px;
+  border-radius:50%;
+  font-size:22px;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
-  <section class="hero">
-    <h2>مسار استثماري بمعايير خاصة</h2>
 
-    <div class="invite">
-      هذه المساحة لا تُتاح للجميع.<br>
-      تداول هادئ، صفقات مدروسة، وقرارات تُتخذ بعناية.<br>
-      إن وصلتَ إلى هنا، فربما هذه الدعوة لك.
+<header>
+  <div class="logo">المكتب</div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">من نحن</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>المكتب للاستشارات القانونية في تركيا</h1>
+  <p>
+    نقدّم خدمات واستشارات قانونية متكاملة للأفراد والشركات داخل الجمهورية التركية،
+    وفق الأنظمة والقوانين المعمول بها وبأعلى درجات المهنية والسرية.
+  </p>
+  <a href="#contact" class="btn">تواصل معنا الآن</a>
+</section>
+
+<section class="section" id="about">
+  <h2>من نحن</h2>
+  <p>
+    المكتب جهة قانونية متخصصة في تقديم الاستشارات والخدمات القانونية في تركيا،
+    نعمل على حماية حقوق عملائنا وتقديم حلول قانونية فعّالة تناسب كل حالة،
+    مع الالتزام الكامل بالقوانين والأنظمة التركية.
+  </p>
+</section>
+
+<section class="section" id="services">
+  <h2>خدماتنا القانونية</h2>
+
+  <div class="services">
+    <div class="service-box">
+      <h3>القضايا التجارية</h3>
+      <p>الاستشارات والتمثيل القانوني في القضايا والنزاعات التجارية.</p>
     </div>
 
-    <div class="card">
-      هذا المسار لا يُفتح للجميع.<br>
-      هو مساحة محدودة خُلقت لمن يفهم أن التداول ليس اندفاعًا،<br>
-      بل وعي، توقيت، وانضباط.<br><br>
-
-      نسخ الصفقات هنا يتم بهدوء،<br>
-      ضمن إطار مدروس يركّز على حماية رأس المال<br>
-      واتخاذ قرارات محسوبة بعيدًا عن الضجيج.<br><br>
-
-      لا إشارات عشوائية،<br>
-      ولا وعود سريعة،<br>
-      بل مسار واضح لمن يقدّر جودة القرار قبل نتيجته.<br><br>
-
-      إن وصلتَ إلى هنا،<br>
-      فربما لأنك تبحث عن تجربة مختلفة…<br>
-      تجربة تُدار بعقلية خاصة، لا عامة.
+    <div class="service-box">
+      <h3>القضايا العمالية</h3>
+      <p>متابعة القضايا العمالية وحقوق العمال وأصحاب العمل.</p>
     </div>
 
-    <a class="telegram-btn" href="https://t.me/n_ur11" target="_blank">
-      تواصل عبر تيليجرام
-    </a>
-  </section>
-</div>
+    <div class="service-box">
+      <h3>القضايا الأسرية</h3>
+      <p>الطلاق، النفقة، الحضانة، وسائر القضايا الأسرية.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>قضايا تسوية الوضع القانوني</h3>
+      <p>متابعة إجراءات تسوية الوضع وفق القوانين التركية.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>قضايا المخالفين</h3>
+      <p>التعامل مع المخالفات وتصحيح الوضع القانوني.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>قضايا الحماية المؤقتة</h3>
+      <p>الاستشارات والمتابعة القانونية المتعلقة بالحماية المؤقتة.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section why">
+  <h2>لماذا المكتب</h2>
+  <ul>
+    <li>خبرة في القوانين والأنظمة التركية</li>
+    <li>متابعة دقيقة وشفافية كاملة</li>
+    <li>تواصل مباشر مع العملاء</li>
+    <li>سرية تامة في جميع القضايا</li>
+  </ul>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>تواصل معنا</h2>
+  <p>
+    هل تحتاج إلى استشارة قانونية في تركيا؟  
+    فريق المكتب جاهز لمساعدتك.
+  </p>
+</section>
+
+<footer>
+© 2025 المكتب – جميع الحقوق محفوظة | تركيا
+</footer>
+
+<a class="whatsapp" href="https://wa.me/XXXXXXXXXX" target="_blank">💬</a>
+
 </body>
 </html>
-
 
