@@ -11,16 +11,27 @@
  --bg:#ffffff; --soft:#f4f6f8; --text:#2a2a2a;
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:"Cairo",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.9}
+body{
+ margin:0;
+ font-family:"Cairo",Tahoma,Arial,sans-serif;
+ background:var(--bg);
+ color:var(--text);
+ line-height:1.9
+}
 a{text-decoration:none;color:inherit}
 .container{max-width:1250px;margin:auto;padding:0 24px}
 
 /* Header */
-header{position:fixed;top:0;width:100%;background:rgba(15,30,45,.9);z-index:999}
-.header{display:flex;justify-content:space-between;align-items:center;padding:16px 0;color:#fff}
+header{
+ position:fixed;top:0;width:100%;
+ background:rgba(15,30,45,.9);z-index:999
+}
+.header{
+ display:flex;justify-content:space-between;align-items:center;
+ padding:16px 0;color:#fff
+}
 .logo{font-size:22px;font-weight:800}
 nav a{margin-left:22px;color:#fff}
-nav a:hover{color:var(--gold)}
 
 /* Hero */
 .hero{
@@ -32,8 +43,7 @@ nav a:hover{color:var(--gold)}
  color:#fff;
  padding:200px 0 160px;
 }
-.hero h1{font-size:50px;font-weight:800}
-.hero h1 span{color:var(--gold)}
+.hero h1{font-size:48px;font-weight:800}
 .hero p{font-size:20px;max-width:720px}
 
 /* Sections */
@@ -43,20 +53,36 @@ nav a:hover{color:var(--gold)}
 
 /* Stats */
 .stats{background:var(--navy);color:#fff}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+.stats-grid{
+ display:grid;grid-template-columns:repeat(4,1fr);
+ gap:30px;text-align:center
+}
 .stat h3{font-size:46px;color:var(--gold);margin-bottom:8px}
 
 /* Services */
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-.service{background:#fff;border-radius:18px;padding:30px;border-top:6px solid var(--gold)}
+.services{
+ display:grid;grid-template-columns:repeat(3,1fr);gap:26px
+}
+.service{
+ background:#fff;border-radius:18px;padding:26px;
+ border-top:6px solid var(--gold);font-size:15px
+}
 
 /* Steps */
 .steps{background:var(--soft)}
-.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
-.step{background:#fff;border-radius:18px;padding:30px;text-align:center;font-weight:700}
+.steps-grid{
+ display:grid;grid-template-columns:repeat(4,1fr);gap:26px
+}
+.step{
+ background:#fff;border-radius:18px;padding:30px;
+ text-align:center;font-weight:700
+}
 
 /* Footer */
-footer{background:var(--navy2);color:#aaa;padding:40px 0;text-align:center}
+footer{
+ background:var(--navy2);color:#aaa;
+ padding:40px 0;text-align:center
+}
 
 /* Responsive */
 @media(max-width:950px){
@@ -83,13 +109,10 @@ footer{background:var(--navy2);color:#aaa;padding:40px 0;text-align:center}
 
 <section class="hero" id="home">
  <div class="container">
-  <h1>
-   <span>محاماة واستشارات قانونية</span><br>
-   في تركيا
-  </h1>
+  <h1>محاماة واستشارات قانونية في تركيا</h1>
   <p>
-   نُقدّم حلولًا قانونية شاملة للأفراد والشركات وفق القوانين التركية
-   وبأعلى درجات السرية والمهنية.
+   نُقدّم حلولًا قانونية شاملة للأفراد والشركات
+   وفق القوانين التركية وبأعلى درجات السرية والمهنية.
   </p>
  </div>
 </section>
@@ -107,16 +130,42 @@ footer{background:var(--navy2);color:#aaa;padding:40px 0;text-align:center}
 
 <section class="section" id="services">
  <div class="container">
-  <h2>الخدمات القانونية</h2>
-  <p class="sub">نقدّم جميع خدمات المحاماة داخل تركيا.</p>
+  <h2>الخدمات القانونية في تركيا</h2>
+  <p class="sub">نقدّم جميع أنواع الخدمات القانونية المعتمدة داخل تركيا.</p>
 
   <div class="services">
-   <div class="service"><h3>الاستشارات القانونية</h3></div>
-   <div class="service"><h3>القضايا الجنائية</h3></div>
-   <div class="service"><h3>القضايا العمالية</h3></div>
-   <div class="service"><h3>القضايا الأسرية</h3></div>
-   <div class="service"><h3>قضايا الإقامة والجنسية</h3></div>
-   <div class="service"><h3>القضايا التجارية</h3></div>
+   <div class="service">الاستشارات القانونية العامة</div>
+   <div class="service">القضايا الجنائية</div>
+   <div class="service">القضايا العمالية</div>
+   <div class="service">القضايا الأسرية (طلاق – نفقة – حضانة)</div>
+   <div class="service">قضايا الإقامة بأنواعها</div>
+   <div class="service">قضايا الجنسية التركية</div>
+   <div class="service">قضايا الترحيل والمنع من الدخول</div>
+   <div class="service">القضايا التجارية</div>
+   <div class="service">تأسيس الشركات</div>
+   <div class="service">إدارة وصياغة العقود</div>
+   <div class="service">القضايا العقارية</div>
+   <div class="service">بيع وشراء العقارات</div>
+   <div class="service">قضايا الإيجارات</div>
+   <div class="service">قضايا التعويضات</div>
+   <div class="service">القضايا الإدارية</div>
+   <div class="service">القضايا الضريبية</div>
+   <div class="service">قضايا الإفلاس</div>
+   <div class="service">قضايا الشركات الأجنبية</div>
+   <div class="service">الملكية الفكرية والعلامات التجارية</div>
+   <div class="service">القضايا المصرفية</div>
+   <div class="service">قضايا الشيكات والسندات</div>
+   <div class="service">قضايا التنفيذ والحجز</div>
+   <div class="service">التحكيم التجاري</div>
+   <div class="service">القضايا الدولية</div>
+   <div class="service">قضايا الميراث</div>
+   <div class="service">قضايا اللجوء والحماية</div>
+   <div class="service">التمثيل أمام المحاكم</div>
+
+   <div class="service">قضايا الحماية المؤقتة</div>
+   <div class="service">قضايا المخالفين</div>
+   <div class="service">قضايا التسوية القانونية</div>
+   <div class="service">قضايا استرجاع الكملك</div>
   </div>
  </div>
 </section>
@@ -124,13 +173,13 @@ footer{background:var(--navy2);color:#aaa;padding:40px 0;text-align:center}
 <section class="section steps" id="steps">
  <div class="container">
   <h2>آلية العمل</h2>
-  <p class="sub">خطوات واضحة لضمان أفضل نتيجة.</p>
+  <p class="sub">خطوات واضحة لضمان أفضل نتيجة قانونية.</p>
 
   <div class="steps-grid">
    <div class="step">الاستشارة الأولية</div>
-   <div class="step">دراسة الملف</div>
-   <div class="step">وضع الحل القانوني</div>
-   <div class="step">المتابعة حتى النهاية</div>
+   <div class="step">دراسة وتحليل الملف</div>
+   <div class="step">وضع الاستراتيجية القانونية</div>
+   <div class="step">المتابعة حتى إغلاق القضية</div>
   </div>
  </div>
 </section>
