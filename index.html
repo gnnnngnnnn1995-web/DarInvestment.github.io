@@ -1,193 +1,228 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>محاماة واستشارات قانونية في تركيا</title>
+  <meta charset="UTF-8">
+  <title>محاماة واستشارات قانونية في تركيا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-:root{
- --navy:#0f1e2d; --navy2:#0b1621; --gold:#c9a24d;
- --bg:#ffffff; --soft:#f4f6f8; --text:#2a2a2a;
-}
-*{box-sizing:border-box}
-body{
- margin:0;
- font-family:"Cairo",Tahoma,Arial,sans-serif;
- background:var(--bg);
- color:var(--text);
- line-height:1.9
-}
-a{text-decoration:none;color:inherit}
-.container{max-width:1250px;margin:auto;padding:0 24px}
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.8;
+    }
 
-/* Header */
-header{
- position:fixed;top:0;width:100%;
- background:rgba(15,30,45,.9);z-index:999
-}
-.header{
- display:flex;justify-content:space-between;align-items:center;
- padding:16px 0;color:#fff
-}
-.logo{font-size:22px;font-weight:800}
-nav a{margin-left:22px;color:#fff}
+    .section {
+      padding: 70px 20px;
+      background: #fff;
+    }
 
-/* Hero */
-.hero{
- background:
- linear-gradient(120deg, rgba(15,30,45,.92), rgba(15,30,45,.75)),
- url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2100&q=80");
- background-size:cover;
- background-position:center;
- color:#fff;
- padding:200px 0 160px;
-}
-.hero h1{font-size:48px;font-weight:800}
-.hero p{font-size:20px;max-width:720px}
+    .section:nth-child(even) {
+      background: #f1f1f1;
+    }
 
-/* Sections */
-.section{padding:110px 0}
-.section h2{font-size:36px;color:var(--navy);margin-bottom:18px}
-.section .sub{color:#666;margin-bottom:50px;font-size:18px}
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
 
-/* Stats */
-.stats{background:var(--navy);color:#fff}
-.stats-grid{
- display:grid;grid-template-columns:repeat(4,1fr);
- gap:30px;text-align:center
-}
-.stat h3{font-size:46px;color:var(--gold);margin-bottom:8px}
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #1f2d3d;
+    }
 
-/* Services */
-.services{
- display:grid;grid-template-columns:repeat(3,1fr);gap:26px
-}
-.service{
- background:#fff;border-radius:18px;padding:26px;
- border-top:6px solid var(--gold);font-size:15px
-}
+    .sub {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #666;
+    }
 
-/* Steps */
-.steps{background:var(--soft)}
-.steps-grid{
- display:grid;grid-template-columns:repeat(4,1fr);gap:26px
-}
-.step{
- background:#fff;border-radius:18px;padding:30px;
- text-align:center;font-weight:700
-}
+    /* Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
 
-/* Footer */
-footer{
- background:var(--navy2);color:#aaa;
- padding:40px 0;text-align:center
-}
+    .stat {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
 
-/* Responsive */
-@media(max-width:950px){
- header{position:static}
- .hero{padding:160px 0 120px}
- .hero h1{font-size:38px}
- .services,.steps-grid,.stats-grid{grid-template-columns:1fr}
-}
-</style>
+    .stat h3 {
+      color: #b08d57;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .service {
+      background: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* About */
+    .about p {
+      margin-bottom: 15px;
+    }
+
+    .about ul {
+      padding-right: 20px;
+    }
+
+    .about ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Steps */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .step {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: #1f2d3d;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
- <div class="container header">
-  <div class="logo">مكتب محاماة</div>
-  <nav>
-   <a href="#home">الرئيسية</a>
-   <a href="#services">الخدمات</a>
-   <a href="#steps">آلية العمل</a>
-  </nav>
- </div>
-</header>
-
-<section class="hero" id="home">
- <div class="container">
-  <h1>محاماة واستشارات قانونية في تركيا</h1>
-  <p>
-   نُقدّم حلولًا قانونية شاملة للأفراد والشركات
-   وفق القوانين التركية وبأعلى درجات السرية والمهنية.
-  </p>
- </div>
-</section>
-
+<!-- Stats -->
 <section class="section stats">
- <div class="container">
-  <div class="stats-grid">
-   <div class="stat"><h3>1200+</h3><p>استشارة قانونية</p></div>
-   <div class="stat"><h3>850+</h3><p>قضية منجزة</p></div>
-   <div class="stat"><h3>15+</h3><p>سنة خبرة</p></div>
-   <div class="stat"><h3>98%</h3><p>رضا العملاء</p></div>
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat"><h3>1200+</h3><p>استشارة قانونية</p></div>
+      <div class="stat"><h3>850+</h3><p>قضية منجزة</p></div>
+      <div class="stat"><h3>15+</h3><p>سنة خبرة</p></div>
+      <div class="stat"><h3>98%</h3><p>رضا العملاء</p></div>
+    </div>
   </div>
- </div>
 </section>
 
+<!-- Services -->
 <section class="section" id="services">
- <div class="container">
-  <h2>الخدمات القانونية في تركيا</h2>
-  <p class="sub">نقدّم جميع أنواع الخدمات القانونية المعتمدة داخل تركيا.</p>
+  <div class="container">
+    <h2>الخدمات القانونية في تركيا</h2>
+    <p class="sub">نقدّم جميع أنواع الخدمات القانونية المعتمدة داخل تركيا</p>
 
-  <div class="services">
-   <!-- القضايا المنقولة إلى الأعلى -->
-   <div class="service">قضايا الترحيل والمنع من الدخول</div>
-   <div class="service">القضايا الضريبية</div>
-   <div class="service">قضايا اللجوء والحماية</div>
-   <div class="service">قضايا الحماية المؤقتة</div>
-   <div class="service">قضايا المخالفين</div>
-   <div class="service">قضايا التسوية القانونية</div>
-   <div class="service">قضايا استرجاع الكملك</div>
+    <div class="services">
+      <div class="service">قضايا الترحيل والمنع من الدخول</div>
+      <div class="service">القضايا الضريبية</div>
+      <div class="service">قضايا اللجوء والحماية</div>
+      <div class="service">قضايا الحماية المؤقتة</div>
+      <div class="service">قضايا المخالفين</div>
+      <div class="service">قضايا التسوية القانونية</div>
+      <div class="service">قضايا استرجاع الكملك</div>
 
-   <!-- باقي الخدمات بدون حذف -->
-   <div class="service">الاستشارات القانونية العامة</div>
-   <div class="service">القضايا الجنائية</div>
-   <div class="service">القضايا العمالية</div>
-   <div class="service">القضايا الأسرية (طلاق – نفقة – حضانة)</div>
-   <div class="service">قضايا الإقامة بأنواعها</div>
-   <div class="service">قضايا الجنسية التركية</div>
-   <div class="service">القضايا التجارية</div>
-   <div class="service">تأسيس الشركات</div>
-   <div class="service">إدارة وصياغة العقود</div>
-   <div class="service">القضايا العقارية</div>
-   <div class="service">بيع وشراء العقارات</div>
-   <div class="service">قضايا الإيجارات</div>
-   <div class="service">قضايا التعويضات</div>
-   <div class="service">القضايا الإدارية</div>
-   <div class="service">قضايا الإفلاس</div>
-   <div class="service">قضايا الشركات الأجنبية</div>
-   <div class="service">الملكية الفكرية والعلامات التجارية</div>
-   <div class="service">القضايا المصرفية</div>
-   <div class="service">قضايا الشيكات والسندات</div>
-   <div class="service">قضايا التنفيذ والحجز</div>
-   <div class="service">التحكيم التجاري</div>
-   <div class="service">القضايا الدولية</div>
-   <div class="service">قضايا الميراث</div>
-   <div class="service">التمثيل أمام المحاكم</div>
+      <div class="service">الاستشارات القانونية العامة</div>
+      <div class="service">القضايا الجنائية</div>
+      <div class="service">القضايا العمالية</div>
+      <div class="service">القضايا الأسرية</div>
+      <div class="service">قضايا الإقامة</div>
+      <div class="service">قضايا الجنسية التركية</div>
+      <div class="service">القضايا التجارية</div>
+      <div class="service">تأسيس الشركات</div>
+      <div class="service">العقارات والإيجارات</div>
+      <div class="service">قضايا التعويضات</div>
+      <div class="service">التحكيم التجاري</div>
+      <div class="service">القضايا الدولية</div>
+    </div>
   </div>
- </div>
 </section>
 
-<section class="section steps" id="steps">
- <div class="container">
-  <h2>آلية العمل</h2>
-  <p class="sub">خطوات واضحة لضمان أفضل نتيجة قانونية.</p>
+<!-- About Us -->
+<section class="section about" id="about">
+  <div class="container">
+    <h2>من نحن</h2>
+    <p class="sub">خبرة قانونية راسخة داخل الأراضي التركية</p>
 
-  <div class="steps-grid">
-   <div class="step">الاستشارة الأولية</div>
-   <div class="step">دراسة وتحليل الملف</div>
-   <div class="step">وضع الاستراتيجية القانونية</div>
-   <div class="step">المتابعة حتى إغلاق القضية</div>
+    <p>
+      نحن شركة محاماة واستشارات قانونية رائدة في تركيا، نقدّم الاستشارات القانونية
+      المحلية والدولية وفق أعلى معايير الجودة والمهنية، ونعمل على تلبية احتياجات
+      عملائنا بكفاءة ومرونة عالية.
+    </p>
+
+    <p>
+      يضم فريقنا نخبة متميزة من المحامين والمستشارين القانونيين المتخصصين في
+      مختلف فروع القانون، مع سجل حافل بالنجاحات وإنجاز القضايا بكفاءة عالية.
+    </p>
+
+    <h3>خدماتنا الاستشارية تشمل:</h3>
+    <ul>
+      <li>التوجيه والمشورة القانونية الشاملة</li>
+      <li>تقديم الحلول الفعالة لتسوية النزاعات</li>
+      <li>التحليل القانوني وتقييم المخاطر</li>
+      <li>إعداد الدراسات القانونية المتخصصة</li>
+      <li>المساندة القانونية واتخاذ القرارات السليمة</li>
+    </ul>
+
+    <h3>رسالتنا</h3>
+    <p>
+      تقديم الدعم والمساندة القانونية لعملائنا بأعلى مستوى من الاحترافية
+      والمهنية.
+    </p>
+
+    <h3>رؤيتنا</h3>
+    <p>
+      أن نكون الشركة الرائدة في مجال المحاماة والاستشارات القانونية من خلال
+      حلول قانونية مبتكرة وفعالة.
+    </p>
+
+    <h3>قيمنا</h3>
+    <p>
+      الخصوصية – الثقة والنزاهة – المهنية والكفاءة – الشراكة الدائمة –
+      المسؤولية الاجتماعية
+    </p>
   </div>
- </div>
+</section>
+
+<!-- Steps -->
+<section class="section steps" id="steps">
+  <div class="container">
+    <h2>آلية العمل</h2>
+    <p class="sub">خطوات واضحة لضمان أفضل نتيجة قانونية</p>
+
+    <div class="steps-grid">
+      <div class="step">الاستشارة الأولية</div>
+      <div class="step">دراسة وتحليل الملف</div>
+      <div class="step">وضع الاستراتيجية القانونية</div>
+      <div class="step">المتابعة حتى إغلاق القضية</div>
+    </div>
+  </div>
 </section>
 
 <footer>
- © 2025 – محاماة واستشارات قانونية في تركيا
+  © 2025 – محاماة واستشارات قانونية في تركيا
 </footer>
 
 </body>
