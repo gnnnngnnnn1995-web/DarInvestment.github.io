@@ -59,11 +59,11 @@ nav a:hover{color:var(--gold)}
 section{padding:70px 0}
 h1,h2,h3{font-family:"Playfair Display",serif}
 
-/* Hero */
+/* Hero – ✅ تم استبدال الصورة هنا */
 .hero{
   background:
     linear-gradient(to left,rgba(0,0,0,.68),rgba(0,0,0,.35)),
-    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80") center/cover;
+    url("hero-law.png") center/cover no-repeat;
   color:#fff;
   padding:95px 0;
 }
@@ -153,6 +153,13 @@ footer{
   color:#aaa;
   padding:25px 0;
   text-align:center;
+}
+
+/* تحسين للجوال */
+@media (max-width:768px){
+  .hero{
+    background-position: top center;
+  }
 }
 </style>
 </head>
@@ -245,10 +252,10 @@ footer{
 
     <div class="slider">
       <div class="slider-track">
-        <div class="rating-card"><div class="stars">★★★★★</div><p>استشارة قانونية احترافية وواضحة.</p><div class="client"><img src="https://i.pravatar.cc/40?img=1"> عميل</div></div>
-        <div class="rating-card"><div class="stars">★★★★★</div><p>تعامل راقٍ وخبرة عالية.</p><div class="client"><img src="https://i.pravatar.cc/40?img=2"> عميل</div></div>
-        <div class="rating-card"><div class="stars">★★★★★</div><p>شرح قانوني مفصل ومفيد.</p><div class="client"><img src="https://i.pravatar.cc/40?img=3"> عميل</div></div>
-        <div class="rating-card"><div class="stars">★★★★★</div><p>أفضل استشارة قانونية داخل تركيا.</p><div class="client"><img src="https://i.pravatar.cc/40?img=4"> عميل</div></div>
+        <div class="rating-card"><div class="stars">★★★★★</div><p>استشارة قانونية احترافية وواضحة.</p><div class="client"><img src="https://i.pravatar.cc/40?img=1" alt=""> عميل</div></div>
+        <div class="rating-card"><div class="stars">★★★★★</div><p>تعامل راقٍ وخبرة عالية.</p><div class="client"><img src="https://i.pravatar.cc/40?img=2" alt=""> عميل</div></div>
+        <div class="rating-card"><div class="stars">★★★★★</div><p>شرح قانوني مفصل ومفيد.</p><div class="client"><img src="https://i.pravatar.cc/40?img=3" alt=""> عميل</div></div>
+        <div class="rating-card"><div class="stars">★★★★★</div><p>أفضل استشارة قانونية داخل تركيا.</p><div class="client"><img src="https://i.pravatar.cc/40?img=4" alt=""> عميل</div></div>
       </div>
     </div>
   </div>
@@ -256,10 +263,6 @@ footer{
 
 <section class="clients">
   <div class="container">
-
-    <!-- ✅ الصورة فقط هي التي تغيرت -->
-    
-  
     <h2>البعض من عملاؤنا</h2>
 
     <h3>🏦 البنوك التركية</h3>
@@ -287,7 +290,6 @@ footer{
       <li>PTT</li>
       <li>TOKİ</li>
     </ul>
-
   </div>
 </section>
 
@@ -308,5 +310,5 @@ footer{
 </footer>
 
 </body>
-</html>
+    </html>
 
